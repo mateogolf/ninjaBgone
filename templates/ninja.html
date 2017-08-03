@@ -6,7 +6,6 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='turtle_style.css') }}">
     </head>
     <body>
-        <!-- {{color}} -->
         {% if color == undefined %}
             <img src="{{url_for('static', filename='tmnt.png')}}">
         {% elif color == "blue" %}
