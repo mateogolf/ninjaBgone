@@ -1,0 +1,2 @@
+# ninjaBgone
+Disappearing Ninja Assignment
