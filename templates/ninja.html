@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='turtle_style.css') }}">
+    </head>
+    <body>
+        <!-- {{color}} -->
+        {% if color == undefined %}
+            <img src="{{url_for('static', filename='tmnt.png')}}">
+        {% elif color == "blue" %}
+            <img src="{{url_for('static', filename='leonardo.jpg')}}">
+        {% elif color == "orange" %}
+            <img src="{{url_for('static', filename='michelangelo.jpg')}}">
+        {% elif color == "red" %}
+            <img src="{{url_for('static', filename='raphael.jpg')}}">
+        {% elif color == "purple" %}
+            <img src="{{url_for('static', filename='donatello.jpg')}}">
+        {% else %}
+            <img src="{{url_for('static', filename='notapril.jpg')}}"> 
+        {% endif %}
+    </body>
+</html>
